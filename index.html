@@ -1,0 +1,877 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zhafran Khrisfarrel V — Biodata</title>
+
+    <!-- ==============================
+         GOOGLE FONTS
+    =============================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+
+    <style>
+
+        /* ==============================
+           WARNA
+        =============================== */
+
+        :root {
+            --black: #1c1a17;
+            --cream: #f2ede2;
+            --yellow: #ffc22e;
+            --red: #d13b2e;
+            --gray: #6b6357;
+            --light-gray: #ded7c8;
+            --green: #319447;
+        }
+
+
+        /* ==============================
+           RESET
+        =============================== */
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+
+        /* ==============================
+           BODY
+        =============================== */
+
+        body {
+            min-height: 100vh;
+
+            padding: 40px 20px;
+
+            font-family: "Barlow", sans-serif;
+
+            color: var(--black);
+
+            background-color: var(--black);
+
+            background-image:
+                radial-gradient(
+                    circle,
+                    rgba(255, 255, 255, 0.05) 1px,
+                    transparent 1px
+                );
+
+            background-size: 14px 14px;
+        }
+
+
+        /* ==============================
+           CONTAINER
+        =============================== */
+
+        .container {
+            width: 100%;
+            max-width: 800px;
+
+            margin: auto;
+        }
+
+
+        /* ==============================
+           JUDUL
+        =============================== */
+
+        .kicker {
+            text-align: center;
+
+            color: var(--yellow);
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            letter-spacing: 3px;
+
+            margin-bottom: 10px;
+        }
+
+
+        .title {
+            text-align: center;
+
+            color: var(--cream);
+
+            font-family: "Anton", sans-serif;
+
+            font-size: clamp(40px, 7vw, 58px);
+
+            line-height: 1;
+
+            margin-bottom: 8px;
+        }
+
+
+        .title span {
+            color: var(--yellow);
+        }
+
+
+        .subtitle {
+            text-align: center;
+
+            color: #b9b2a2;
+
+            font-size: 15px;
+
+            margin-bottom: 35px;
+        }
+
+
+        /* ==============================
+           CARD
+        =============================== */
+
+        .card {
+            background: var(--cream);
+
+            border: 3px solid var(--black);
+
+            border-radius: 6px;
+
+            overflow: hidden;
+
+            box-shadow:
+                10px 10px 0 var(--red),
+                10px 10px 0 3px var(--black);
+        }
+
+
+        /* ==============================
+           HEADER CARD
+        =============================== */
+
+        .card-header {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 16px 22px;
+
+            background: var(--black);
+
+            border-bottom: 3px solid var(--yellow);
+        }
+
+
+        .association {
+            color: var(--cream);
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+        }
+
+
+        .class {
+            padding: 6px 12px;
+
+            background: var(--yellow);
+
+            color: var(--black);
+
+            border: 2px solid var(--black);
+
+            border-radius: 3px;
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* ==============================
+           ISI
+        =============================== */
+
+        .content {
+            padding: 30px;
+        }
+
+
+        /* ==============================
+           PROFILE
+        =============================== */
+
+        .profile {
+            display: grid;
+
+            grid-template-columns: 190px 1fr;
+
+            gap: 30px;
+
+            align-items: start;
+        }
+
+
+        /* ==============================
+           FOTO
+        =============================== */
+
+        .photo {
+            width: 190px;
+
+            height: 240px;
+
+            border: 3px solid var(--black);
+
+            background: #d8d2c5;
+
+            overflow: hidden;
+
+            position: relative;
+        }
+
+
+        .photo img {
+            width: 100%;
+
+            height: 100%;
+
+            display: block;
+
+            /*
+               cover = memenuhi frame
+               tanpa merusak rasio foto
+            */
+
+            object-fit: cover;
+
+            /*
+               Mengatur posisi foto.
+               25% membuat bagian atas/wajah
+               lebih diprioritaskan.
+            */
+
+            object-position: center 25%;
+        }
+
+
+        /* ==============================
+           INFORMASI
+        =============================== */
+
+        .info h2 {
+            font-family: "Anton", sans-serif;
+
+            font-size: 34px;
+
+            line-height: 1;
+
+            margin-bottom: 6px;
+        }
+
+
+        .hero-name {
+            color: var(--red);
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 17px;
+
+            font-weight: 700;
+
+            letter-spacing: 2px;
+
+            margin-bottom: 20px;
+        }
+
+
+        /* ==============================
+           DATA
+        =============================== */
+
+        .data {
+            border-top: 2px solid var(--black);
+        }
+
+
+        .row {
+            display: grid;
+
+            grid-template-columns: 120px 1fr;
+
+            gap: 10px;
+
+            padding: 10px 0;
+
+            border-bottom: 1px solid #aaa396;
+        }
+
+
+        .label {
+            color: var(--gray);
+
+            font-size: 14px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+
+        .value {
+            font-size: 15px;
+
+            font-weight: 600;
+        }
+
+
+        /* ==============================
+           SECTION
+        =============================== */
+
+        .section {
+            margin-top: 30px;
+        }
+
+
+        .section-title {
+            display: flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            margin-bottom: 13px;
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 18px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+
+            letter-spacing: 2px;
+        }
+
+
+        .section-title::before {
+            content: "";
+
+            width: 28px;
+
+            height: 5px;
+
+            background: var(--red);
+
+            display: block;
+        }
+
+
+        /* ==============================
+           STATISTIK
+        =============================== */
+
+        .stats {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 12px;
+        }
+
+
+        .stat {
+            padding: 15px 10px;
+
+            text-align: center;
+
+            background: #e5dfd1;
+
+            border: 2px solid var(--black);
+
+            transition: 0.2s ease;
+        }
+
+
+        .stat:hover {
+            transform: translateY(-4px);
+        }
+
+
+        .stat-number {
+            font-family: "Anton", sans-serif;
+
+            font-size: 30px;
+
+            line-height: 1;
+
+            margin-bottom: 5px;
+        }
+
+
+        .stat-label {
+            color: var(--gray);
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            text-transform: uppercase;
+        }
+
+
+        /* ==============================
+           DESKRIPSI
+        =============================== */
+
+        .description {
+            padding: 20px;
+
+            color: var(--cream);
+
+            background: var(--black);
+
+            border-left: 7px solid var(--yellow);
+
+            font-size: 15px;
+
+            line-height: 1.6;
+        }
+
+
+        .description strong {
+            color: var(--yellow);
+        }
+
+
+        /* ==============================
+           FOOTER
+        =============================== */
+
+        .footer {
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 15px 22px;
+
+            background: var(--light-gray);
+
+            border-top: 3px solid var(--black);
+
+            font-family: "Barlow Condensed", sans-serif;
+
+            font-size: 12px;
+
+            font-weight: 700;
+
+            letter-spacing: 1px;
+        }
+
+
+        /* ==============================
+           STATUS
+        =============================== */
+
+        .status {
+            display: flex;
+
+            align-items: center;
+
+            gap: 7px;
+        }
+
+
+        .status-dot {
+            width: 10px;
+
+            height: 10px;
+
+            border-radius: 50%;
+
+            background: var(--green);
+
+            border: 2px solid var(--black);
+        }
+
+
+        /* ==============================
+           RESPONSIVE
+        =============================== */
+
+        @media (max-width: 600px) {
+
+            body {
+                padding: 25px 12px;
+            }
+
+
+            .content {
+                padding: 20px;
+            }
+
+
+            .profile {
+                grid-template-columns: 1fr;
+            }
+
+
+            .photo {
+                width: 100%;
+
+                height: 300px;
+            }
+
+
+            .photo img {
+                object-position: center 25%;
+            }
+
+
+            .stats {
+                grid-template-columns: 1fr;
+            }
+
+
+            .row {
+                grid-template-columns: 105px 1fr;
+            }
+
+
+            .footer {
+                flex-direction: column;
+
+                gap: 8px;
+
+                text-align: center;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+
+        <!-- ==============================
+             JUDUL
+        =============================== -->
+
+        <p class="kicker">
+            POLITEKNIK NEGERI MALANG
+        </p>
+
+
+        <h1 class="title">
+            MY <span>BIODATA</span>
+        </h1>
+
+
+        <p class="subtitle">
+            Official Biodata &amp; Information File
+        </p>
+
+
+        <!-- ==============================
+             CARD UTAMA
+        =============================== -->
+
+        <div class="card">
+
+
+            <!-- HEADER -->
+
+            <div class="card-header">
+
+                <div class="association">
+                    MAHASISWA
+                </div>
+
+
+                <div class="class">
+                    TEKNOLOGI INFORMASI
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+
+            <div class="content">
+
+
+                <!-- ==============================
+                     PROFILE
+                =============================== -->
+
+                <div class="profile">
+
+
+                    <!-- FOTO PROFIL -->
+
+                    <div class="photo">
+
+                        <img
+                            src="zhafran.jpg.jpg"
+                            alt="Foto Profil Zhafran Khrisfarrel"
+                        >
+
+                    </div>
+
+
+                    <!-- INFORMASI -->
+
+                    <div class="info">
+
+
+                        <h2>
+                            Zhafran Khrisfarrel V
+                        </h2>
+
+
+                        <div class="hero-name">
+                            INSTAGRAM : @zhaf_vatraya
+                        </div>
+
+
+                        <!-- DATA BIODATA -->
+
+                        <div class="data">
+
+
+                            <div class="row">
+
+                                <div class="label">
+                                    Nama
+                                </div>
+
+                                <div class="value">
+                                    Zhafran Khrisfarrel V
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="label">
+                                    Usia
+                                </div>
+
+                                <div class="value">
+                                    18 Tahun
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="label">
+                                    Kelas
+                                </div>
+
+                                <div class="value">
+                                    SIB - 1F
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="label">
+                                    Jurusan
+                                </div>
+
+                                <div class="value">
+                                    Teknologi Informasi
+                                </div>
+
+                            </div>
+
+
+                            <div class="row">
+
+                                <div class="label">
+                                    Prodi
+                                </div>
+
+                                <div class="value">
+                                    Sistem Informasi Bisnis
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==============================
+                     STATISTIK
+                =============================== -->
+
+                <div class="section">
+
+
+                    <div class="section-title">
+                        Hero Statistics
+                    </div>
+
+
+                    <div class="stats">
+
+
+                        <div class="stat">
+
+                            <div class="stat-number">
+                                75%
+                            </div>
+
+                            <div class="stat-label">
+                                Suka Anime One Punch Man
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <div class="stat-number">
+                                15%
+                            </div>
+
+                            <div class="stat-label">
+                                Cerdas
+                            </div>
+
+                        </div>
+
+
+                        <div class="stat">
+
+                            <div class="stat-number">
+                                10%
+                            </div>
+
+                            <div class="stat-label">
+                                BODOH
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==============================
+                     HERO PROFILE
+                =============================== -->
+
+                <div class="section">
+
+
+                    <div class="section-title">
+                        Hero Profile
+                    </div>
+
+
+                    <div class="description">
+
+                        Seorang mahasiswa yang berusaha untuk
+                        bertahan hidup, tidak mengulang matkul,
+                        dan lulus tepat waktu.
+
+                        <br><br>
+
+                        <strong>
+                            HIDUP MAHASISWA!!
+                        </strong>
+
+                        <br><br>
+
+                        Prinsip utama:
+
+                        <strong>
+                            "Fokus kuliah, pacaran belakangan."
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ==============================
+                 FOOTER
+            =============================== -->
+
+            <div class="footer">
+
+
+                <div>
+                    TEKNOLOGI INFORMASI — TI_FAST — TI_BRAVO
+                </div>
+
+
+                <div class="status">
+
+                    <span class="status-dot"></span>
+
+                    POLITEKNIK NEGERI MALANG
+
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
+```
+
